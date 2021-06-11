@@ -1,0 +1,51 @@
+body{
+	font-family: sans-serif;
+}
+
+.gallery{
+	margin: 10px 50px;
+
+}
+.gallery img{
+	width: fit-content;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+max-width: 300px;
+height: 300px;
+}
+.gallery img:hover{
+filter: grayscale(0);
+transform: scale(1.1);
+}
+
+.logo{
+	width:80px;
+	background-size:contain;
+	
+}
+
+@media only screen and (max-width:400px ) {
+	/* For mobile phones: */
+.gallery img{
+	width: 250px;
+	height: 250px;
+}
+}
+@media only screen and (max-width:900px ) {
+	/* For mobile phones: */
+
+	.gallery img{
+		width: 300px;
+		height: 300px;
+	}
+
+}
+@media only screen and (max-width:300px ) {
+	/* For mobile phones: */
+.gallery img{
+	width: 200px;
+	height: 200px;
+	padding: none;
+}
+}
